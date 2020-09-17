@@ -17,14 +17,14 @@ export const TodoList: React.FC<TodoListProps> = ({
     }
 
     const removeHandler = (event: React.MouseEvent, id: number) => {
-        event.preventDefault()
+        event.preventDefault();
         onRemove(id)
-    }
+    };
 
     return (
         <ul>
             {todos.map(todo => {
-                const classes = ['todo']
+                const classes = ['todo'];
                 if (todo.completed) {
                     classes.push('completed')
                 }
@@ -50,4 +50,4 @@ export const TodoList: React.FC<TodoListProps> = ({
             })}
         </ul>
     )
-}
+};

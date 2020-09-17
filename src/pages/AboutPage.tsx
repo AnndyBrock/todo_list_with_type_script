@@ -2,7 +2,7 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 
 export const AboutPage: React.FC = () => {
-    const history = useHistory()
+    const history = useHistory();
     return (
         <>
             <h1>Страница информации</h1>
